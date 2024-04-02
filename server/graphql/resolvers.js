@@ -39,7 +39,24 @@ const resolvers = {
         },
       });
     },
+    deleteProduct: async (_, {id}) => {
+      try{
+       await prisma.product.delete({
+        where:{
+          id,
+        },
+
+      });
+    return true;
+  }catch(error){
+    console.error("Error deleting product",error);
+    return false;
+
+  }
+    }
+
   },
 };
+
 
 module.exports = resolvers;

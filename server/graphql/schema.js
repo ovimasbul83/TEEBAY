@@ -28,6 +28,7 @@ const typeDefs = gql`
       categoryId: Int!
     ): Product!
     createCategory(name: String!): Category!
+    deleteProduct(id:Int!):Boolean
   }
 
   type Query {
