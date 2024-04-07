@@ -1,5 +1,5 @@
 # TEEBAY
-TEEBAY is a Node.js server application with a GraphQL API for managing users, products, and categories. It uses Apollo Server for GraphQL, Prisma for database access, and PostgreSQL as the database. For front-end task React along with React-Hook-Frorm, for managing GraphQL APIs in front-end apollo-client is used 
+TEEBAY is a Node.js server application with a GraphQL API for managing users, products, and categories. It uses Apollo Server for GraphQL, Prisma for database access, and PostgreSQL as the database. For front-end task React along with React-Hook-Frorm, for managing GraphQL APIs in front-end apollo-client is used.
 
 ## Features
 
