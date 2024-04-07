@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import  react from 'react';
- const App = () => {  
-  return (
-    <div>
-      <h1>React App</h1>
-    </div>
-  );
- };
-export default App;
-=======
 import React from 'react';
 import { ApolloProvider } from '@apollo/client';
 import {ApolloClient, InMemoryCache} from '@apollo/client';
@@ -52,4 +41,3 @@ const App = () => {
 };
 
 export default App;
->>>>>>> master
