@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+.landing-page {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.center-content {
+  text-align: center; /* Center text horizontally */
+}
+
+.landing-button {
+  cursor: pointer;
+  background-color: #007bff; /* Blue color, you can change it */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.landing-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
