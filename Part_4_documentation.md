@@ -32,4 +32,5 @@ The task required developing a frontend interface to interact with the GraphQL A
 - **React Hook Form**: Utilized React Hook Form for managing form state and validation, simplifying the form development process.
 - **Apollo Client**: Used Apollo Client in the frontend to communicate with the GraphQL server. Apollo Client manages GraphQL operations, caching, and state management in the frontend application.
 - **Styling**: Styled frontend components using CSS to create an aesthetically pleasing and user-friendly interface.
+
 For video documentation drive link [here](https://drive.google.com/file/d/14NEgmpK8_3_HjDxO4dxLZ5xf96NTkpc1/view?usp=sharing) 
