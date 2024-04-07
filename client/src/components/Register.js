@@ -3,7 +3,7 @@ import { useMutation } from '@apollo/client';
 import { REGISTER_MUTATION } from '../graphql/mutations.js';
 import { useNavigate } from 'react-router-dom';
 import RegisterForm from './RegisterForm.js';
-
+import './LoginForm.css'
 const Register= ()=>{
     const [registerUser, { loading, error }] = useMutation(REGISTER_MUTATION);
     const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Register= ()=>{
         }
     };
     return (
-        <div>
+        <div className='center-content'>
         <h2>Register</h2>
         <RegisterForm onSubmit={handleRegister} />
         {loading && <p>Loading...</p> && <p>Registration Successful</p>}

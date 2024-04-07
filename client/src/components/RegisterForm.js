@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-
+import './LoginForm.css'
 const RegisterForm= ({onSubmit})=>{
     const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -9,13 +9,15 @@ const RegisterForm= ({onSubmit})=>{
     };
      
     return (
+        <div className='form-container'>
         <form onSubmit={handleSubmit(handleFormSubmit)}>
-        <input type="email"  placeholder='Email'{...register('email', { required: 'Username is required' })} />
-        {errors.email && <span>Email is required</span>}
-        <input type="password" placeholder='Password'{...register('password', { required: 'Password is required' })}/> 
-        {errors.password && <span>Password is required</span>}
-        <button type="submit">Register</button>
+          <input className="input-field" type="email"  placeholder='Email'{...register('email', { required: 'Username is required' })} />
+          {errors.email && <span>Email is required</span>}
+          <input className="input-field" type="password" placeholder='Password'{...register('password', { required: 'Password is required' })}/> 
+          {errors.password && <span>Password is required</span>}
+          <button className="submit-button" type="submit">Register</button>
         </form>
+        </div>
     )
     
 

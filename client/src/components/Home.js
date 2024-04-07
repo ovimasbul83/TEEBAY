@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="home-page">
       <div className="center-content"> {/* Container for centering content */}
-        <h1>Welcome to Teebay</h1>
+        <h1>Welcome Again</h1>
           <div className="home-button" onClick={handleManageProductsClick}>Manage Products</div>
           <div className="home-button" onClick={handleShopClick}>Shop</div>
         </div>

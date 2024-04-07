@@ -24,21 +24,19 @@ const typeDefs = gql`
     user: User
   }
   type Order {
-    id: Int!
-    userId: Int!
+    id: Int
     productId: Int!
-    product: Product!
-    createdAt: String!
+    product: Product
+    createdAt: String
   }
   
   type Rental {
-    id: Int!
-    userId: Int!
+    id: Int
     productId: Int!
-    product: Product!
-    startDate: String!
+    product: Product
+    startDate: String
     endDate: String!
-    createdAt: String!
+    createdAt: String
   }
 
   type Mutation {
