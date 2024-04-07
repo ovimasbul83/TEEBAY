@@ -18,6 +18,10 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "graphql": "^16.8.1",
+<<<<<<< HEAD
+=======
+    "jsonwebtoken": "^9.0.2",
+>>>>>>> master
     "nodemon": "^3.1.0",
     "pg": "^8.11.4"
   },
