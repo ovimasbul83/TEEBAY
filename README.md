@@ -21,11 +21,6 @@ TEEBAY is a Node.js server application with a GraphQL API for managing users, pr
 2. Navigate to the server `cd TEEBAY/client` and run `npm install`.
 3. Start the server with `npm start`.
 
-
-## Usage
-
-Access the GraphQL API at `http://localhost:${PORT}/graphql` to interact with users, products, and categories.
-
 ## Contributing
 
 Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
