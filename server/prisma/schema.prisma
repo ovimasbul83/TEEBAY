@@ -20,8 +20,11 @@ model Product {
   price       Float
   categoryId  Int
   category    Category @relation(fields: [categoryId], references: [id])
+<<<<<<< HEAD
+=======
   orders      Order[]    
   rentals     Rental[] 
+>>>>>>> master
 }
 
 model Category {
@@ -29,6 +32,8 @@ model Category {
   name     String
   products Product[]
 }
+<<<<<<< HEAD
+=======
 model Order {
   id        Int      @id @default(autoincrement())
   productId Int
@@ -44,3 +49,4 @@ model Rental {
   endDate    DateTime
   createdAt  DateTime @default(now())
 }
+>>>>>>> master

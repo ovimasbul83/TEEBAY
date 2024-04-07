@@ -12,9 +12,16 @@ TEEBAY is a Node.js server application with a GraphQL API for managing users, pr
 
 1. Clone the repository.
 2. Navigate to the server `cd TEEBAY/server/` and run `npm install`.
+<<<<<<< HEAD
+3. Create a database with PostgreSQL.
+4. Set up environment variables like PORT and database url in a `.env` file 
+5. Initialize the database with `npx prisma migrate dev`.
+6. Start the server with `npm start`.
+=======
 3. Set up environment variables in a `.env` file.
 4. Initialize the database with `npx prisma migrate dev`.
 5. Start the server with `npm start`.
+>>>>>>> master
 
 ## Usage
 

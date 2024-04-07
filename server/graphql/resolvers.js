@@ -1,6 +1,9 @@
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
+<<<<<<< HEAD
+=======
 const jwt = require('jsonwebtoken');
+>>>>>>> master
 
 const resolvers = {
   Query: {
@@ -8,16 +11,26 @@ const resolvers = {
       return await prisma.user.findMany();
     },
     products: async () => {
+<<<<<<< HEAD
+      return await prisma.product.findMany();
+=======
       return await prisma.product.findMany({
 
         include: {
           category: true,
         },
       });
+>>>>>>> master
     },
     categories: async () => {
       return await prisma.category.findMany();
     },
+<<<<<<< HEAD
+  },
+  Mutation: {
+    createUser: async (_, { email, password }) => {
+      return await prisma.user.create({
+=======
     orders: async (_, __, { userId }) => {
       return await prisma.order.findMany({
         where: { userId },
@@ -49,20 +62,29 @@ const resolvers = {
     
       // Create a new user if the email doesn't exist
       const newUser = await prisma.user.create({
+>>>>>>> master
         data: {
           email,
           password,
         },
       });
+<<<<<<< HEAD
+    },
+    createProduct: async (_, { name, description, price,categoryId }) => {
+=======
     
       return { id: newUser.id, email: newUser.email, error: null };
     },
     createProduct: async (_, { name, description, price, categoryId }) => {
+>>>>>>> master
       return await prisma.product.create({
         data: {
           name,
           description,
           price,
+<<<<<<< HEAD
+          categoryId
+=======
           categoryId,
         },
       });
@@ -75,6 +97,7 @@ const resolvers = {
           description,
           price,
           categoryId,
+>>>>>>> master
         },
       });
     },
@@ -85,6 +108,28 @@ const resolvers = {
         },
       });
     },
+<<<<<<< HEAD
+    deleteProduct: async (_, {id}) => {
+      try{
+       await prisma.product.delete({
+        where:{
+          id,
+        },
+
+      });
+    return true;
+  }catch(error){
+    console.error("Error deleting product",error);
+    return false;
+
+  }
+    }
+
+  },
+};
+
+
+=======
     deleteProduct: async (_, { id }) => {
       try {
         await prisma.product.delete({ where: { id } });
@@ -131,4 +176,5 @@ const resolvers = {
   },
 };
 
+>>>>>>> master
 module.exports = resolvers;

@@ -12,13 +12,18 @@ const typeDefs = gql`
     description: String
     price: Float
     categoryId: Int
+<<<<<<< HEAD
+=======
     category: Category
+>>>>>>> master
   }
 
   type Category {
     id: Int
     name: String
   }
+<<<<<<< HEAD
+=======
   type AuthPayload {
     token: String
     user: User
@@ -38,6 +43,7 @@ const typeDefs = gql`
     endDate: String!
     createdAt: String
   }
+>>>>>>> master
 
   type Mutation {
     createUser(email: String!, password: String!): User!
@@ -47,6 +53,10 @@ const typeDefs = gql`
       price: Float!
       categoryId: Int!
     ): Product!
+<<<<<<< HEAD
+    createCategory(name: String!): Category!
+    deleteProduct(id:Int!):Boolean
+=======
     updateProduct(
       id: Int!
       name: String!
@@ -60,14 +70,18 @@ const typeDefs = gql`
 
     createOrder(productId: Int!): Order!
     createRental(productId: Int!, endDate: String!): Rental!
+>>>>>>> master
   }
 
   type Query {
     users: [User]
     products: [Product]
     categories: [Category]
+<<<<<<< HEAD
+=======
     orders: [Order]
     rentals: [Rental]
+>>>>>>> master
   }
 `;
 
