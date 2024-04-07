@@ -6,7 +6,11 @@ const authRoutes = require("./routes/auth.routes");
 const dotenv = require("dotenv");
 
 const prisma = new PrismaClient();
+<<<<<<< HEAD
 
+=======
+const cors = require('cors');
+>>>>>>> master
 const typeDefs = require("./graphql/schema");
 const resolvers = require("./graphql/resolvers");
 const server = new ApolloServer({ typeDefs, resolvers });
@@ -18,6 +22,10 @@ dotenv.config();
 // Middleware to parse JSON bodies
 app.use(express.json());
 
+<<<<<<< HEAD
+=======
+app.use(cors());
+>>>>>>> master
 // Define REST API routes
 
 app.use("/api/v1/auth", authRoutes);
@@ -40,4 +48,8 @@ async function startApolloServer() {
 
 startApolloServer().catch((error) => {
   console.error("Error starting Apollo Server:", error);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> master
